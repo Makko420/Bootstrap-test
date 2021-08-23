@@ -3,93 +3,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <title>#611 responssiiviset sivut</title>
 </head>
 <body>
-    <nav id="nav">
-        <a href="index.html">Etusivu</a>
-        <a href="arviointi.html">Osaamisen arviointi</a>
-        <a href="kriteerit.html">Kriteerit</a>
-        <a href="tutkinnonosat.html">Tutkinnonosat</a>
-        <a href="tutkinto.html">Tutkinnon muodostaminen</a>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="arviointi.html">Osaamisen arviointi</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="kriteerit.html">Kriteerit</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="tutkinnonosat.html">Tutkinnonosat</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="tutkinto.html">Tutkinnon muodostaminen</a>
+            </li>
+        </ul> 
     </nav>
 
     <section>
-        <h1>
-            Arviointikriteerit
-        </h1>
-        <table>
-            <tr style="text-align: center;">
-                <th>Arvosana</th>
-                <th>Opiskelija</th>
-            </tr>
-            <tr>
-                <th><b>Tyydyttävä 1</b></th>
-                <th>
-                    <ul class="list">
-                        <li>Toteuttaa työn ohjeiden mukaisesti.  </li>
-                        <li>Toimii yhteistyökykyisesti.  </li>
-                        <li>Tarvitsee joissakin tilanteissa lisäohjeita.  </li>
-                        <li>Hyödyntää työssä tarvittavaa perustietoa.  </li>
-                        <li>Muuttaa toimintaansa saamansa palautteen mukaisesti.  </li>
-                    </ul>
-                </th>
-            </tr>
-            <tr>
-                <th><b>Tyydyttävä 2</b></th>
-                <th>
-                    <ul class="list">
-                        <li>Toteuttaa työn oma-aloitteisesti ja ohjeiden mukaisesti.  </li>
-                        <li>Toimii yhteistyökykyisesti ja vuorovaikutteisesti.  </li>
-                        <li>Tarvitsee vain harvoissa tilanteissa lisäohjeita.  </li>
-                        <li>Hyödyntää työssä tarvittavaa tietoa tarkoituksenmukaisesti.  </li>
-                        <li>Muuttaa toimintaansa saamansa palautteen ja omien havaintojen mukaisesti.  </li>
-                    </ul>
-                </th>
-            </tr>
-            <tr>
-                <th><b>Hyvä 3</b></th>
-                <th>
-                    <ul class="list">
-                        <li>Toteuttaa työkokonaisuuden itsenäisesti.  </li>
-                        <li>Toimii yhteistyökykyisesti ja aloitteellisesti vuorovaikutustilanteissa.  </li>
-                        <li>Selviytyy tavanomaisista ongelmanratkaisutilanteista.  </li>
-                        <li>Hyödyntää työssä tarvittavaa tietoa monipuolisesti.  </li>
-                        <li>Arvioi suoriutumistaan realistisesti.  </li>
-                    </ul>
-                </th>
-            </tr>
-            <tr>
-                <th><b>Hyvä 4</b></th>
-                <th>
-                    <ul class="list">
-                        <li>Suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti.  </li>
-                        <li>Toimii yhteistyökykyisesti ja rakentavasti vuorovaikutustilanteissa.  </li>
-                        <li>Selviytyy ongelmanratkaisutilanteista hyödyntäen monipuolisia ratkaisutapoja.  </li>
-                        <li>Soveltaa työssä tarvittavaa tietoa monipuolisesti ja perustellusti.  </li>
-                        <li>Arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan.  </li>
-                    </ul>
-                </th>
-            </tr>
-            <tr>
-                <th><b>Kiitettävä 5</b></th>
-                <th>
-                    <ul class="list">
-                        <li>Suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti ottaen huomioon muut toimijat.  </li>
-                        <li>Toimii yhteistyökykyisesti ja rakentavasti haastavissakin vuorovaikutustilanteissa.  </li>
-                        <li>Arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan.  </li>
-                        <li>Soveltaa työssä tarvittavaa tietoa ongelmanratkaisutilanteissa monipuolisesti ja kriittisesti.  </li>
-                        <li>Arvioi suoriutumistaan realistisesti ja esittää perusteltuja ratkaisuja osaamisensa kehittämiseen.  </li>
-                        <li>Ymmärtää oman työnsä merkityksen osana laajempaa kokonaisuutta.  </li>
-                    </ul>
-                </th>
-            </tr>
-        </table>
+        <div class="container pt-3">
+            <h1>
+                Arviointikriteerit
+            </h1>
+            <table class="table table-bordered">
+                <tr style="text-align: center;">
+                    <th>Arvosana</th>
+                    <th>Opiskelija</th>
+                </tr>
+                <tr>
+                    <th><b>Tyydyttävä 1</b></th>
+                    <th>
+                        <ul class="list">
+                            <li>Toteuttaa työn ohjeiden mukaisesti.</li>
+                            <li>Toimii yhteistyökykyisesti.  </li>
+                            <li>Tarvitsee joissakin tilanteissa lisäohjeita.  </li>
+                            <li>Hyödyntää työssä tarvittavaa perustietoa.  </li>
+                            <li>Muuttaa toimintaansa saamansa palautteen mukaisesti.  </li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th><b>Tyydyttävä 2</b></th>
+                    <th>
+                        <ul class="list">
+                            <li>Toteuttaa työn oma-aloitteisesti ja ohjeiden mukaisesti.  </li>
+                            <li>Toimii yhteistyökykyisesti ja vuorovaikutteisesti.  </li>
+                            <li>Tarvitsee vain harvoissa tilanteissa lisäohjeita.  </li>
+                            <li>Hyödyntää työssä tarvittavaa tietoa tarkoituksenmukaisesti.  </li>
+                            <li>Muuttaa toimintaansa saamansa palautteen ja omien havaintojen mukaisesti.  </li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th><b>Hyvä 3</b></th>
+                    <th>
+                        <ul class="list">
+                            <li>Toteuttaa työkokonaisuuden itsenäisesti.  </li>
+                            <li>Toimii yhteistyökykyisesti ja aloitteellisesti vuorovaikutustilanteissa.  </li>
+                            <li>Selviytyy tavanomaisista ongelmanratkaisutilanteista.  </li>
+                            <li>Hyödyntää työssä tarvittavaa tietoa monipuolisesti.  </li>
+                            <li>Arvioi suoriutumistaan realistisesti.  </li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th><b>Hyvä 4</b></th>
+                    <th>
+                        <ul class="list">
+                            <li>Suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti.  </li>
+                            <li>Toimii yhteistyökykyisesti ja rakentavasti vuorovaikutustilanteissa.  </li>
+                            <li>Selviytyy ongelmanratkaisutilanteista hyödyntäen monipuolisia ratkaisutapoja.  </li>
+                            <li>Soveltaa työssä tarvittavaa tietoa monipuolisesti ja perustellusti.  </li>
+                            <li>Arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan.  </li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th><b>Kiitettävä 5</b></th>
+                    <th>
+                        <ul class="list">
+                            <li>Suunnittelee ja toteuttaa työkokonaisuuden itsenäisesti ottaen huomioon muut toimijat.  </li>
+                            <li>Toimii yhteistyökykyisesti ja rakentavasti haastavissakin vuorovaikutustilanteissa.  </li>
+                            <li>Arvioi suoriutumistaan realistisesti sekä tunnistaa vahvuuksiaan ja kehittämisen kohteitaan.  </li>
+                            <li>Soveltaa työssä tarvittavaa tietoa ongelmanratkaisutilanteissa monipuolisesti ja kriittisesti.  </li>
+                            <li>Arvioi suoriutumistaan realistisesti ja esittää perusteltuja ratkaisuja osaamisensa kehittämiseen.  </li>
+                            <li>Ymmärtää oman työnsä merkityksen osana laajempaa kokonaisuutta.  </li>
+                        </ul>
+                    </th>
+                </tr>
+            </table>
+        </div>
     </section>
 
-    <footer id="footer">
-
-    </footer>
 </body>
 </html>
